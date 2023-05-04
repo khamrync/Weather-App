@@ -1,0 +1,245 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url("images/scenery.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.searchengine {
+  position: absolute;
+  top: 470px;
+  left: 910px;
+}
+
+input.searchbar {
+  padding: 1px;
+  border-radius: 20px;
+  outline: none;
+  background: rgba(222, 199, 157, 0.6);
+  color: black;
+}
+input.searchbutton {
+  border-radius: 10%;
+  border: none;
+  outline: none;
+  background: rgba(222, 199, 157, 0.6);
+  color: black;
+}
+
+.container {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+.current-location {
+  position: absolute;
+  top: 0px;
+  left: 160px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: rgba(226, 220, 211, 0.4);
+
+}
+
+.weather {
+  width: 500px;
+  height: 200px;
+  border-radius: 20px;
+  background: rgba(235, 198, 134, 0.4);
+}
+
+.emoji {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+h1 {
+  font-size: 60px;
+}
+
+.forecast {
+  position: absolute;
+  top: 30px;
+  left: 90px;
+}
+p {
+  font-family: monospace;
+}
+
+.temp {
+  position: absolute;
+  top: 70px;
+  left: 220px;
+}
+h2 {
+  font-size: 70px;
+  left: 70px;
+}
+#fahrenheit {
+  position: absolute;
+  font-size: medium;
+  text-decoration: none;
+  color: rgb(36, 35, 35);
+  top: 10px;
+  left: 120px;
+}
+.divider {
+  position: absolute;
+  font-size: medium;
+  top: 10px;
+  left: 135px;
+}
+#celsius {
+  position: absolute;
+  font-size: medium;
+  left: 145px;
+  top: 10px;
+  text-decoration: none;
+  color: rgb(36, 35, 35);
+}
+#farenheight:hover
+#celcius:hover 
+
+.number {
+  font-size: 90px;
+}
+
+.date {
+position: absolute;
+left: 400px;
+top: 10px;
+font-size: smaller;
+}
+.time {
+position: absolute;
+left: 400px;
+top: 25px;
+font-size: smaller;
+}
+
+.city {
+  position: absolute;
+  left: 400px;
+  top: 40px;
+  font-size: larger;
+}
+
+.hourly {
+  background: rgba(235, 198, 134, 0.4);
+  width: 500px;
+  height: 100px;
+  border-radius: 20px;
+  position: absolute;
+  top: 230px;
+}
+
+.week {
+  background: rgba(235, 198, 134, 0.4);
+  width: 200px;
+  height: 350px;
+  border-radius: 20px;
+  position: absolute;
+  left: 550px;
+  top: 0;
+}
+
+.hour1 {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+.h1emoji {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.h1temp {
+  position: absolute;
+  top: 60px;
+  left: 5px;
+}
+
+.hour2 {
+  position: absolute;
+  top: 10px;
+  left: 150px;
+}
+.h2emoji {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.h2temp {
+  position: absolute;
+  top: 60px;
+  left: 5px;
+}
+
+.hour3 {
+  position: absolute;
+  top: 10px;
+  left: 250px;
+}
+.h3emoji {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.h3temp {
+  position: absolute;
+  top: 60px;
+  left: 5px;
+}
+
+.hour4 {
+  position: absolute;
+  top: 10px;
+  left: 350px;
+}
+.h4emoji {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.h4temp {
+  position: absolute;
+  top: 60px;
+  left: 5px;
+}
+
+.hour5 {
+  position: absolute;
+  top: 10px;
+  left: 450px;
+}
+.h5emoji {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.h5temp {
+  position: absolute;
+  top: 60px;
+  left: 5px;
+}
+
+.row {
+  background: rgba(235, 198, 134, 0.4);
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  right: 650px;
+  height: 350px;
+  width: 150px;
+}
