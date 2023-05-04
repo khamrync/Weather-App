@@ -7,7 +7,7 @@ body {
 }
 
 body {
-  background-image: url("file:///Users/khamrynclark/Desktop/Coding%20(beginner)/HTML%20Projects/Weather%20Project/images/scenery.jpeg");
+  background-image: url("images/scenery.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
