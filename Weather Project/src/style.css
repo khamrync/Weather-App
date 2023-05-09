@@ -7,7 +7,7 @@ body {
 }
 
 body {
-  background-image: url("images/scenery.jpeg");
+  background-image: url("../images/scenery.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
