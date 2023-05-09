@@ -51,9 +51,18 @@ let form = document.querySelector("form");
 let apiKey = "2d5e0f0b5a89b155a3d8f0e733b3293a";
 
 function showTemperature(response) {
+  console.log(response);
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector(".number");
   temperatureElement.innerHTML = `${temperature}°`;
+  let descpriptionElement = document.querySelector(".forecast");
+  descpriptionElement.innerHTML = response.data.weather[0].description;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  let iconElement = document.querySelector("#weather-icon");
+  iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
 form.addEventListener("submit", function(event) {
