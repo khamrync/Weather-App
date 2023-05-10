@@ -25,8 +25,10 @@
         </form>
         <div class="weather">
             <div class="left"> 
-                <div class="emoji">
-                   <h1>☀️</h1> 
+                <div class="icon">
+                   <h1>
+                    <img id="weather-icon" src="https://ssl.gstatic.com/onebox/weather/64/sunny.png">
+                   </h1> 
                 </div>
                 <div class="forecast">
                     <p>Sunny</p>
@@ -39,6 +41,17 @@
                         <span class="divider">|</span> 
                         <a href="#" id="celsius">C</a>
                 </div>
+                <ul>
+                    <li>
+                        Percipitation: <span id="percipitation"></span>%
+                    </li>
+                    <li>
+                        Humidity: <span id="humidity"></span>%
+                    </li>
+                    <li>
+                        Wind: <span id="wind"></span>mph
+                    </li>
+                </ul>
             <div class="right">
                 <h3 class="city">
                     El Paso, TX
