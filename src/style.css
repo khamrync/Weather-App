@@ -166,7 +166,7 @@ font-size: smaller;
   top: 10px;
   left: 50px;
 }
-.h1emoji {
+.h1icon {
   position: absolute;
   top: 30px;
   left: 10px;
@@ -182,7 +182,7 @@ font-size: smaller;
   top: 10px;
   left: 150px;
 }
-.h2emoji {
+.h2icon {
   position: absolute;
   top: 30px;
   left: 10px;
@@ -198,7 +198,7 @@ font-size: smaller;
   top: 10px;
   left: 250px;
 }
-.h3emoji {
+.h3icon {
   position: absolute;
   top: 30px;
   left: 10px;
@@ -214,7 +214,7 @@ font-size: smaller;
   top: 10px;
   left: 350px;
 }
-.h4emoji {
+.h4icon {
   position: absolute;
   top: 30px;
   left: 10px;
@@ -230,7 +230,7 @@ font-size: smaller;
   top: 10px;
   left: 450px;
 }
-.h5emoji {
+.h5icon {
   position: absolute;
   top: 30px;
   left: 10px;
@@ -246,7 +246,11 @@ font-size: smaller;
   border-radius: 20px;
   position: absolute;
   top: 0;
-  right: 650px;
+  right: 550px;
   height: 350px;
-  width: 150px;
+  width: 250px;
+}
+
+.col {
+  font-size: medium;
 }
