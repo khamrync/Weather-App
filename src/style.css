@@ -241,16 +241,19 @@ font-size: smaller;
   left: 5px;
 }
 
-.row {
+
+.container3 {
   background: rgba(235, 198, 134, 0.4);
   border-radius: 20px;
   position: absolute;
   top: 0;
   right: 550px;
-  height: 350px;
+  height: 390px;
   width: 250px;
 }
-
-.col {
-  font-size: medium;
+.weather-icons {
+  width: 10%;
+}
+.high {
+  font-weight: bold;
 }
