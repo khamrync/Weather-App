@@ -251,9 +251,6 @@ font-size: smaller;
   height: 390px;
   width: 250px;
 }
-.weather-icons {
-  width: 10%;
-}
-.high {
-  font-weight: bold;
+.days {
+  font-size: larger;
 }

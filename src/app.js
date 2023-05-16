@@ -35,28 +35,27 @@ function tempChange2(event) {
 celsius.addEventListener("click", tempChange2);
 
 // Display Forecast //
-function displayForecast() {
+function displayForecast(response) {
   let forecastElement = document.querySelector("#weather-forecast");
 
-  let forecastHTML = "";
-  forecastHTML = forecastHTML + `
-  <div class="Sunday">
-    Sun 
-      <img 
-        class="weather-icons" 
-        src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"> 
-    <span class="weekcast">
-      Sunny
-    </span> 
-    <span class="high">
-      86°
-    </span>
-    <span class="low">
-      /68°
-    </span>
+  let days = ["Wed","Thu", "Fri", "Sat", "Sun", "Mon"];
+  let forecastHTML = `<div class="row align-items-start">`;
+  days.forEach(function (day){
+  forecastHTML = forecastHTML +
+  `
+    <div class="col">
+    <span class="days">${day}</span>
     </div>
-        <hr>
+    <div class="col">
+      <img class="icons" src="https://openweathermap.org/img/wn/50d@2x.png" width="70%">
+    </div>
+    <div class="col">
+      <span class="max-temp">84°</span> <span class="min-temp">/61°</span> 
+    </div>
+  </div>
+  </div>
   `;
+  })
   forecastElement.innerHTML = forecastHTML;
 }
 
@@ -138,4 +137,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 });
 
-displayForecast;
+displayForecast();
