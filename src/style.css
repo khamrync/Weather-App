@@ -248,9 +248,32 @@ font-size: smaller;
   position: absolute;
   top: 0;
   right: 550px;
-  height: 390px;
+  height: 400px;
   width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+.forecast-block {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .days {
   font-size: larger;
+}
+.icons {
+  width: 42px;
+}
+.max-temp {
+ position: absolute;
+ right: 35px;
+}
+.min-temp {
+  position: absolute;
+  right: 5px;
 }
