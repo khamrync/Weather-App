@@ -53,7 +53,7 @@ function tempChange2(event) {
 }
 celsius.addEventListener("click", tempChange2);
 
-// Display Forecast //
+// Display Daily Forecast //
 function displayForecast(response) {
   //for hourly temp use the same format but use response.data.hourly//
   console.log(response.data.daily);
@@ -84,6 +84,33 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
+//Display Hourly Forecast//
+function hourlyForecast(response) {
+  console.log(response.data.hourly);
+  let hourly = response.data.hourly;
+  let hourlyElement = document.querySelector("#hourly-forecast");
+
+  let hourlyHTML = `<div class="row">`;
+  hourly.forEach(function (forecastHour, index) {
+    if (index < 5)
+  hourlyHTML =
+    hourlyHTML +
+    `
+    <div class="hourly">
+            <div class="row">
+                <div class="col-2">
+                    ${forecastHour.dt} 
+                    <img src="http://openweathermap.org/img/wn/${forecastHour.weather[0].icon}@2x.png"
+                    width="42">
+                    ${Math.round(forecastHour.temp)}
+                </div>
+            </div>
+        </div>
+    `;
+  });
+  hourlyElement.innerHTML = hourlyHTML;
+}
+
 // Search engine value //
 function search(event) {
   event.preventDefault();
@@ -104,7 +131,7 @@ function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = "f81614abe2395d5dfecd45b9298041de";
   let apiOneCall = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
-  axios.get(apiOneCall).then(displayForecast);
+  axios.get(apiOneCall).then(displayForecast).then(hourlyForecast);
 }
 
 function showTemperature(response) {
@@ -160,3 +187,4 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 displayForecast();
+hourlyForecast();
