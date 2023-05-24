@@ -100,25 +100,21 @@ function hourlyForecast(response) {
   let hourly = response.data.hourly;
   let hourlyElement = document.querySelector("#hourly-forecast");
 
-  let hourlyHTML = `<div class="row">`;
+  let hourlyHTML = `<div class="row" style="display:flex;">`;
   hourly.forEach(function (forecastHour, index) {
-    if (index < 5)
+    if (index < 6)
   hourlyHTML =
     hourlyHTML +
     `
-    <div class="hourly">
-            <div class="row">
-                <div class="col-2">
-                    ${formatTime(forecastHour.dt)} 
-                    <img src="http://openweathermap.org/img/wn/${forecastHour.weather[0].icon}@2x.png"
-                    width="42">
-                    ${Math.round(forecastHour.temp)}
-                </div>
-            </div>
-        </div>
+    <div class="col-2">
+       <span class="hour">${formatTime(forecastHour.dt)}</span> 
+        <img class="icon-img" src="http://openweathermap.org/img/wn/${forecastHour.weather[0].icon}@2x.png"
+        width="42">
+       <div class="hour-temp"> ${Math.round(forecastHour.temp)}</div>
+    </div>
     `;
   });
-  hourlyElement.innerHTML = hourlyHTML;
+  hourlyElement.innerHTML = hourlyHTML + `</div>`;
 }
 
 // Search engine value //

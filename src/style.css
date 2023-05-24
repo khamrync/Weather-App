@@ -142,7 +142,7 @@ font-size: smaller;
   font-size: larger;
 }
 
-.hourly {
+.container2 {
   background: rgba(235, 198, 134, 0.4);
   width: 500px;
   height: 100px;
@@ -151,94 +151,18 @@ font-size: smaller;
   top: 230px;
 }
 
-.week {
-  background: rgba(235, 198, 134, 0.4);
-  width: 200px;
-  height: 350px;
-  border-radius: 20px;
+.hour {
   position: absolute;
-  left: 550px;
-  top: 0;
+  margin-left: 10px;
 }
-
-.hour1 {
-  position: absolute;
-  top: 10px;
-  left: 50px;
+.hour-temp {
+  position: relative;
+  top: 35px;
+  margin-left: 10px;
 }
-.h1icon {
-  position: absolute;
-  top: 30px;
-  left: 10px;
-}
-.h1temp {
-  position: absolute;
-  top: 60px;
-  left: 5px;
-}
-
-.hour2 {
-  position: absolute;
-  top: 10px;
-  left: 150px;
-}
-.h2icon {
-  position: absolute;
-  top: 30px;
-  left: 10px;
-}
-.h2temp {
-  position: absolute;
-  top: 60px;
-  left: 5px;
-}
-
-.hour3 {
-  position: absolute;
-  top: 10px;
-  left: 250px;
-}
-.h3icon {
-  position: absolute;
-  top: 30px;
-  left: 10px;
-}
-.h3temp {
-  position: absolute;
-  top: 60px;
-  left: 5px;
-}
-
-.hour4 {
-  position: absolute;
-  top: 10px;
-  left: 350px;
-}
-.h4icon {
-  position: absolute;
-  top: 30px;
-  left: 10px;
-}
-.h4temp {
-  position: absolute;
-  top: 60px;
-  left: 5px;
-}
-
-.hour5 {
-  position: absolute;
-  top: 10px;
-  left: 450px;
-}
-.h5icon {
-  position: absolute;
-  top: 30px;
-  left: 10px;
-}
-.h5temp {
-  position: absolute;
-  top: 60px;
-  left: 5px;
+.icon-img {
+  position: relative;
+  top: 25px;
 }
 
 
